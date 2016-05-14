@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>ex01 - hello context</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" href="index.css"/>
+	
+	<!--
+		External style sheet is used only to make page easier on the eyes while developing (with black background and grey frame around canvas).
+		JQuery is used for convenience and in later steps helps with loading resources and keeping code clean.
+		glMatrix is used for convenience with managing matrices, more on this later...
+		
+		The idea is to keep engine stuff inside a separate file (with dummy name "My3DEngine.js" for now)
+	-->
+	<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+	<script src="https://github.com/toji/gl-matrix/blob/master/dist/gl-matrix-min.js"></script>
+	<script src="My3DEngine.js"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+	<!-- The 'canvas' DOM element would seem to be the only type that WebGL can render onto: -->
+	<canvas id="webgl_canvas" width="640" height="480"></canvas>
+</body>
+</html>

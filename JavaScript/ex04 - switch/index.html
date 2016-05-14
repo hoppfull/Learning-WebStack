@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>ex04 - switch</title>
+	<link rel="stylesheet" type="text/css" href="XSS.css" />
+</head>
+<body>
+	<script type="text/javascript">
+		switch(0){ //This value will be tested against the values at each case
+			case 0:
+				document.write("zero");
+				break;
+			case 1:
+				document.write("one");
+				break;
+			case 2:
+				document.write("two");
+				break;
+			case 3:
+				document.write("three");
+				break;
+			default:
+				document.write("some other number");
+		}
+	</script>
+</body>
+</html>

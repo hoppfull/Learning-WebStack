@@ -1,0 +1,9 @@
+body {
+	background-color:black;
+	font-family:arial;
+	color:white;
+}
+
+#webgl_canvas {
+	border:2px white solid;
+}

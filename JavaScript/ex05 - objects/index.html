@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>ex05 - objects</title>
+	<link rel="stylesheet" type="text/css" href="XSS.css" />
+	
+	<script type="text/javascript">
+		//Declare a class:
+		function myObject(x, y){
+			this.x = x;
+			this.y = y;
+			this.scream = myFunc;
+		}
+		
+		//Declare a function used by class:
+		function myFunc(){
+			return "aaaaah!! " + this.x + this.y;
+		}
+		
+		//Create object from class:
+		var whatevs_object = new myObject("hello", "world");
+	</script>
+</head>
+<body>
+	<script type="text/javascript">
+		//Call object variables and functions:
+		document.write(whatevs_object.y + whatevs_object.x + "<br />");
+		document.write(whatevs_object.scream());
+	</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+body {
+	background-color:black;
+	font-family:arial;
+	color:white;
+}
+
+.panel {
+	background-color:grey;
+	position:absolute;
+	width:150px; height:70px;
+	top:300px
+}
